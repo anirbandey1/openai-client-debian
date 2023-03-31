@@ -17,8 +17,10 @@ python3 -m venv .venvs/openai-client-venv
 
 if [ -f .venvs/openai-client-venv/bin/activate ]; then
     echo "Good to go"
+    echo "Python virtualenv created properly"
 else
     echo "Virtual environment not created properly"
+    echo "Abort Install"
     exit 1
 fi
 
@@ -30,6 +32,11 @@ python3 -m pip install pyinstaller
 which python
 
 pyinstaller src/main.py
+
+
+mkdir -p openai-client/opt
+mkdir -p openai-client/opt/openai-client-bin
+
 
 cp -r dist/main openai-client/opt/openai-client-bin/binaries
 

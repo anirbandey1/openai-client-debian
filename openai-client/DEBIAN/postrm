@@ -1,6 +1,6 @@
-# Postinstall script
+# Postremove script
 
-echo "Install done"
+echo "Package uninstalled"
 
 # Remove unnecessary packages
 
