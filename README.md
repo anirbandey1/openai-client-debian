@@ -4,7 +4,7 @@
 #### Build .deb package
 
 ```
-git clone https://github.com/openai-client-debian.git
+git clone https://github.com/awesomeDev12/openai-client-debian.git
 cd openai-client-debian
 bash script.sh
 ```
