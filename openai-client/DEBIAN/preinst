@@ -1,0 +1,8 @@
+# Preinstall script
+
+# Install necessary python modules
+
+# pip install --upgrade PySide6
+# pip install --upgrade openai
+
+echo "Install begins"

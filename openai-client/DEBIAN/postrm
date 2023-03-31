@@ -1,0 +1,9 @@
+# Postinstall script
+
+echo "Install done"
+
+# Remove unnecessary packages
+
+# pip uninstall PySide6
+# pip uninstall openai
+
