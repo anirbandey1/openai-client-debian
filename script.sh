@@ -23,12 +23,24 @@ else
     read -p "Do you wish to manually install the dependencies(Y/N):" apt_install
     if [ "$apt_install" = "Y" ]
     then
-	   sudo apt install python3.10-venv
+        sudo apt install python3.10-venv
     else	    
-    	   echo "Abort Install"
-    	   exit 1
+        echo "Abort Install"
+        exit 1
     fi
 fi
+
+
+# Final check
+if [ -f .venvs/openai-client-venv/bin/activate ]; then
+    echo "Good to go"
+    echo "Python virtualenv created properly"
+else
+    echo "Virtual environment not created properly"
+    echo "Abort Install"
+    exit 1
+fi
+
 
 source .venvs/openai-client-venv/bin/activate
 python3 -m pip install --upgrade pip
