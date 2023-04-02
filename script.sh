@@ -1,6 +1,6 @@
 # Build script
 
-git clone https://github.com/awesomeDev12/openai-client.git src
+git clone https://github.com/awesomeDev12/openai-client.git main_repo
 
 
 sudo apt install python3-pip
@@ -49,7 +49,7 @@ python3 -m pip install openai
 python3 -m pip install pyinstaller
 which python
 
-pyinstaller src/main.py
+pyinstaller main_repo/src/main.py
 
 
 mkdir -p openai-client/opt
