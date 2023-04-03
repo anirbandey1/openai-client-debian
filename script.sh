@@ -44,9 +44,10 @@ fi
 
 source .venvs/openai-client-venv/bin/activate
 python3 -m pip install --upgrade pip
-python3 -m pip install PySide6
-python3 -m pip install openai
-python3 -m pip install pyinstaller
+pip install --upgrade -r main_repo/requirements.txt
+# python3 -m pip install PySide6
+# python3 -m pip install openai
+# python3 -m pip install pyinstaller
 which python
 
 pyinstaller main_repo/main.py

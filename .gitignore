@@ -9,3 +9,5 @@ openai-client/opt/openai-client-bin/binaries/
 
 main.spec
 openai-client.deb
+
+main_repo/
