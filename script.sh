@@ -49,7 +49,7 @@ python3 -m pip install openai
 python3 -m pip install pyinstaller
 which python
 
-pyinstaller main_repo/src/main.py
+pyinstaller main_repo/main.py
 
 
 mkdir -p openai-client/opt
